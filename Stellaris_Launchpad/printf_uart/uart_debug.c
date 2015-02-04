@@ -34,7 +34,7 @@ void PrintRegValue(const char *string_val, unsigned long reg_value)
 {
 	char c[8];
 	int  i = 0;
-	//char v = 0;
+
 	while(*string_val != '\0')
 	{
 		UARTCharPut(UART0_BASE, string_val[0]);
@@ -52,4 +52,14 @@ void PrintRegValue(const char *string_val, unsigned long reg_value)
 
 	UARTCharPut(UART0_BASE, '\n');
 	UARTCharPut(UART0_BASE, '\r');
+}
+
+
+void PrintString(const char *string_val)
+{
+	while(*string_val != '\0')
+	{
+		UARTCharPut(UART0_BASE, string_val[0]);
+		string_val++;
+	}
 }

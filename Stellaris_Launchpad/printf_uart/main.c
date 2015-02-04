@@ -24,7 +24,8 @@ int main(void) {
 
 	while(1)
 	{
-		PrintRegValue("Hello",1024);
+		PrintString("Hello UART library!!!\n\r");
+		PrintRegValue("This is int value 1024: ",1024);
 	}
 
 	return 0;

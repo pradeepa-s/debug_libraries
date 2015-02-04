@@ -29,6 +29,6 @@
 
 void InitUARTDebug(void);
 void PrintRegValue(const char *string_val, unsigned long reg_value);
-
+void PrintString(const char *string_val);
 
 #endif /* UART_DEBUG_H_ */
